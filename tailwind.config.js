@@ -9,8 +9,7 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
 
     // Flowbite
-    "./node_modules/flowbite-react/**/*.js",
-
+    './node_modules/flowbite-react/**/*.js',
   ],
   theme: {
     extend: {},
