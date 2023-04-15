@@ -6,16 +6,15 @@ import { RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit'
 import { chain, configureChains, createClient, WagmiConfig } from 'wagmi'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public'
-import { mainnet, goerli } from '@wagmi/core'
-
+import { polygonMumbai } from '@wagmi/chains'
 import '@fortawesome/fontawesome-svg-core/styles.css' //importing font awesome css
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { PPScroll } from '@/components/PPScroll'
+
 config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
-
 const { chains, provider, webSocketProvider } = configureChains(
-  [mainnet, goerli],
+  [polygonMumbai],
   [publicProvider()]
 )
 

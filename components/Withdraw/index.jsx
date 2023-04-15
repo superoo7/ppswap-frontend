@@ -6,6 +6,8 @@ export const WithdrawTab = () => {
     e.preventDefault()
     const note = e.target.note.value
     const recipient = e.target.recipient.value
+    console.log(note)
+    console.log(recipient)
   }
 
   return (
@@ -24,7 +26,7 @@ export const WithdrawTab = () => {
       </div>
       <div className="pt-4">
         <Button type="submit" outline={true} gradientDuoTone="purpleToBlue">
-          Submit
+          Withdraw
         </Button>
       </div>
     </form>
