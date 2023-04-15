@@ -9,6 +9,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 import bananaLogo from '../public/banana-logo.svg'
 import Link from 'next/link'
+import { PPHeader } from './PPHeader'
 
 export default function Header(isConnected) {
   const [isNavOpen, setIsNavOpen] = useState(false) // initiate isNavOpen state with false
@@ -16,7 +17,7 @@ export default function Header(isConnected) {
   return (
     <div className="flex items-center justify-between border-b border-gray-400 py-8 px-20">
       <Link href="/" className="flex items-center">
-        <h1 className="text-4xl">GELKIN</h1>
+        <PPHeader />
       </Link>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
