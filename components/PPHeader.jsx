@@ -2,7 +2,7 @@ import React from 'react'
 
 export const PPHeader = () => {
   return (
-    <div classNameName="flex text-4xl">
+    <div className="flex text-4xl">
       <div className="flex">
         <div className="flex inverted-p">
           <SemiCircle
