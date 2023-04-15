@@ -12,6 +12,8 @@ export const DepositTab = () => {
     e.preventDefault()
     const token = e.target.token.value
     const amount = e.target.amount.value
+    console.log(token)
+    console.log(amount)
   }
 
   const handleWorldIdSuccess = (result) => {}

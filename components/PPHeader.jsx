@@ -9,19 +9,19 @@ export const PPHeader = () => {
             style={{
               borderLeft: 'none',
               borderRight: 'none',
-              borderRadius: '50px 0 0 50px',
+              borderRadius: '25px 0 0 25px',
             }}
           />
           <Stick />
         </div>
-        <span className="m-2"></span>
+        <span className="m-1"></span>
         <div className="flex standard-p">
           <Stick />
           <SemiCircle
             style={{
               borderLeft: 'none',
               borderRight: 'none',
-              borderRadius: '0 50px 50px 0',
+              borderRadius: '0 25px 25px 0',
             }}
           />
         </div>
@@ -34,8 +34,8 @@ const Stick = ({ style }) => {
   return (
     <span
       style={{
-        height: '100px',
-        border: '2px solid black',
+        height: '50px',
+        border: '1px solid black',
         ...style,
       }}
     ></span>
@@ -46,9 +46,9 @@ const SemiCircle = ({ style }) => {
   return (
     <span
       style={{
-        height: '50px',
-        width: '50px',
-        border: '2px solid black',
+        height: '25px',
+        width: '25px',
+        border: '1px solid black',
         ...style,
       }}
     ></span>
